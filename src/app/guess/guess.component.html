@@ -1,0 +1,12 @@
+<div class="guess-container">
+  <input class="guess-input" matInput maxlength="1" [formControl]="guess" />
+  <button
+    mat-fab
+    color="accent"
+    aria-label="Example icon button with a home icon"
+    [disabled]="guess.value === ''"
+    (click)="submit()"
+  >
+    <mat-icon>check</mat-icon>
+  </button>
+</div>

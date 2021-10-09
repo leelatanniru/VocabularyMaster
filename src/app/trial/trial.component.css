@@ -1,0 +1,18 @@
+.trail-input {
+  height: 24px;
+  width: 24px;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid white;
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+}
+
+.green {
+  background-color: rgb(25, 124, 25);
+}
+
+.red {
+  background-color: rgb(236, 77, 77);
+}

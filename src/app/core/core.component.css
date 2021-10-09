@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+.title {
+  margin-left: 12px;
+  font-family: "Lora", serif;
+  letter-spacing: 0.01em;
+  font-weight: 900;
+}
+
+.guess-text {
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.score {
+  margin-right: 28px;
+}
+
+.icon {
+  margin-left: 28px;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 64px);
+  background-color: #f0edf6;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%239C92AC' fill-opacity='0.16' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.game {
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 100%;
+  background-color: whitesmoke;
+  height: 100%;
+}
+
+.word {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.consonant {
+  height: 18px;
+  width: 18px;
+  background-color: wheat;
+  display: inline-block;
+  border: 1px solid rgba(129, 129, 247, 0.5);
+}
+
+.vowel {
+  height: 18px;
+  width: 18px;
+  background-color: tomato;
+  display: inline-block;
+  border: 1px solid rgba(129, 129, 247, 0.5);
+}
+
+.remainging-chances {
+  justify-items: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.test {
+  display: inline-block;
+}
+
+.remainging-chances > span {
+  margin-right: 24px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.enter-a-letter {
+  font-size: 20px;
+  margin-top: 5%;
+  font-weight: 500;
+}
+
+.meaning {
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.meaning-container {
+  font-size: 40px;
+}

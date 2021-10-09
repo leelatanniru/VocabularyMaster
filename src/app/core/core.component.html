@@ -1,0 +1,41 @@
+<mat-toolbar color="primary">
+  <img class="icon" width="40" src="assets/dictionary.png" />
+  <h2 class="title">VOCABULARY MASTER</h2>
+
+  <span class="spacer"></span>
+  <div class="score">
+    <h2>SCORE: {{ score }}</h2>
+  </div>
+
+  <div class="score">
+    <h2>Word Number: {{ questionNumber + 1 }}</h2>
+  </div>
+</mat-toolbar>
+
+<div class="container">
+  <div class="game">
+    <p class="guess-text">Guess the word</p>
+    <div class="word">
+      <div *ngFor="let a of guessword; let i = index">
+        <app-letter [enteredLetter]="a" [isOvel]="isVowel[i]"></app-letter>
+      </div>
+    </div>
+    <p style="font-size: 18px">
+      <span class="consonant"></span> contains a consonant and
+      <span class="vowel"></span> contains a vowel (a, e, i, o, u)
+    </p>
+
+    <p calss="meaning-container">
+      <span class="meaning">Meaning of the above word is:</span>
+      {{ currentWordMeaning }}
+    </p>
+    <p class="enter-a-letter">Enter a letter below to complete the word.</p>
+    <app-guess></app-guess>
+    <div class="remainging-chances">
+      <span>Remaining chances:</span>
+      <ng-container *ngFor="let a of remainingTrials; let i = index">
+        <app-trial [guess]="a"></app-trial>
+      </ng-container>
+    </div>
+  </div>
+</div>

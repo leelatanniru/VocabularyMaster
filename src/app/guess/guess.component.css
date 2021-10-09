@@ -1,0 +1,29 @@
+.mat-fab.mat-accent,
+.mat-flat-button.mat-accent,
+.mat-mini-fab.mat-accent,
+.mat-raised-button.mat-accent {
+  background-color: rgb(30, 211, 30);
+  color: white;
+}
+
+.guess-input {
+  height: 56px;
+  width: 56px;
+  font-size: 42px;
+  text-align: center;
+  margin: 24px;
+  border: 2px solid #b2b7c2;
+  background-color: honeydew;
+  text-transform: uppercase;
+  border: 1px solid rgb(65, 65, 211, 0.5);
+}
+
+.guess-input:focus {
+  box-shadow: 0 0 20px #143b91;
+}
+
+.guess-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
