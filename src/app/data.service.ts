@@ -85,7 +85,9 @@ export class DataService {
       this.guessword$.next(this._guessword);
     }
 
-    if (this._guessword.join("") === this.currentWord) {
+    if (
+      this._guessword.join("").toLowerCase() === this.currentWord.toLowerCase()
+    ) {
       this.IncrementScore();
       this.IncrementQuestionNumber();
       this.openAnswer();
@@ -100,7 +102,7 @@ export class DataService {
   createMatchArray(c) {
     const match = [];
     for (let i = 0; i < this.currentWord.length; i++) {
-      if (this.currentWord[i] === c) {
+      if (this.currentWord[i].toLowerCase() === c.toLowerCase()) {
         match.push(i);
       }
     }
