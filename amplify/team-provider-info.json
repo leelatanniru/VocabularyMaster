@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-vocabularymaster-dev-22057-authRole",
+            "UnauthRoleArn": "arn:aws:iam::492404615768:role/amplify-vocabularymaster-dev-22057-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::492404615768:role/amplify-vocabularymaster-dev-22057-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "amplify-vocabularymaster-dev-22057-deployment",
+            "UnauthRoleName": "amplify-vocabularymaster-dev-22057-unauthRole",
+            "StackName": "amplify-vocabularymaster-dev-22057",
+            "StackId": "arn:aws:cloudformation:ap-south-1:492404615768:stack/amplify-vocabularymaster-dev-22057/9d4de170-2942-11ec-b24e-0254939c68f8",
+            "AmplifyAppId": "d2bi8rp0rah470"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d2bi8rp0rah470",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}

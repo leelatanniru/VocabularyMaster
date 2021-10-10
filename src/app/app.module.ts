@@ -13,8 +13,9 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatInputModule } from "@angular/material/input";
 import { MatIconModule } from "@angular/material/icon";
 import { TrialComponent } from "./trial/trial.component";
-import { HighlightDirective } from './highlight.directive';
-import { AnswerComponent } from './answer/answer.component';
+import { HighlightDirective } from "./highlight.directive";
+import { AnswerComponent } from "./answer/answer.component";
+import { MatDialogModule } from "@angular/material/dialog";
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,8 +35,10 @@ import { AnswerComponent } from './answer/answer.component';
     MatButtonModule,
     MatInputModule,
     MatIconModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
+  entryComponents: [AnswerComponent],
 })
 export class AppModule {}

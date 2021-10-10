@@ -1,1 +1,11 @@
-<p>answer works!</p>
+<h1 mat-dialog-title>
+  {{ data.word | uppercase }} <i>({{ data.pos }})</i>
+</h1>
+<p><b>Meaning:</b> {{ data.meaning }}</p>
+<p><b>Example:</b> {{ data.example }}</p>
+
+<div mat-dialog-actions>
+  <button mat-raised-button mat-dialog-close cdkFocusInitial color="primary">
+    Ok
+  </button>
+</div>

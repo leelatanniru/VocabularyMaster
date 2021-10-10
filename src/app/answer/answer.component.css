@@ -1,0 +1,16 @@
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 26px;
+}
+
+.mat-dialog-actions {
+  justify-content: flex-end;
+}
+
+/* button {
+  color: white;
+  background-color: cornflowerblue;
+} */

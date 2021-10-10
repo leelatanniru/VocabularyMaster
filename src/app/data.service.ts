@@ -1,7 +1,8 @@
 import { Injectable } from "@angular/core";
 import * as data from "./data.json";
 import { BehaviorSubject, Subject } from "rxjs";
-
+import { MatDialog, MAT_DIALOG_DATA } from "@angular/material/dialog";
+import { AnswerComponent } from "./answer/answer.component";
 @Injectable({
   providedIn: "root",
 })
@@ -32,7 +33,7 @@ export class DataService {
   public _currentWordExample;
   public _currentWordPOS;
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
   IncrementScore() {
     this._score++;
@@ -88,13 +89,10 @@ export class DataService {
       this.IncrementScore();
       this.IncrementQuestionNumber();
       this.openAnswer();
-      this.getNewWord();
-
       console.log("correct");
     } else if (this.wrongAnswers === 10) {
-      this.IncrementScore();
+      this.IncrementQuestionNumber();
       this.openAnswer();
-      this.getNewWord();
       console.log("wrong");
     }
   }
@@ -109,5 +107,16 @@ export class DataService {
     return match;
   }
 
-  openAnswer() {}
+  openAnswer() {
+    const dialogRef = this.dialog.open(AnswerComponent, {
+      data: {
+        word: this.currentWord,
+        meaning: this._currentWordMeaning,
+        example: this._currentWordExample,
+        pos: this._currentWordPOS,
+      },
+      disableClose: true,
+    });
+    dialogRef.afterClosed().subscribe(() => this.getNewWord());
+  }
 }
